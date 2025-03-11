@@ -1,0 +1,5 @@
+<app-counters></app-counters>
+<app-custom-table [rowData]="rowData" [enableCheckbox]="true" [allowMultiSelect]="true" [tableAddBtn]="'Add Customer'" [tableHeading]="'Customers'"
+    (getSelectedRows)="onNotifySelected($event)" [sqPaginationConfig]="tablePaginationSettings"
+    [sqColumnDefinition]="columnDefinition" (PageChanged)="isPageChanged($event)" (openmodal)="openDialogueModal($event)" (openlead)="openLeadinfo($event)">
+</app-custom-table>

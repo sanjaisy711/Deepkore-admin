@@ -1,0 +1,210 @@
+
+GET:  http://localhost:8082/po-delivery-report/api/list
+
+Response:
+
+[
+    {
+        "requisitionNo": "PR5035",
+        "requesterName": "Balakrishnan, Ms. Shubha Mangattil",
+        "requesterEmail": "shubha.balakrishnan@quest-global.com",
+        "acmId": "4636",
+        "supplierName": "Dell Global B V(Singapore Branch)",
+        "supplierEmail": "Guruprasad.Kulkarni@dell.com",
+        "poOrderNo": "PO2161",
+        "poClosureStatus": "Order Closed For All Actions",
+        "servicePO": "No",
+        "poOrderDate": "09-Dec-2021",
+        "needBy": "15-Jan-2022",
+        "status": "Received",
+        "poOrderedAmount": 383300.0,
+        "grnOrSesAmount": 383300.0,
+        "currency": "USD",
+        "preparerName": "Balakrishnan, Ms. Shubha Mangattil",
+        "preparerEmail": "shubha.balakrishnan@quest-global.com",
+        "buyerName": null,
+        "buyerEmail": null,
+        "mailSentDate": null,
+        "uuid": null,
+        "vendorLinkStatus": null,
+        "lineItems": [
+            {
+                "commodityCode": 117825,
+                "commodityDescription": "IT - Laptops_1",
+                "description": "Dell Latitude 5420 CTO Base - Option 3  (i7 proc /16 GB/512 GB SSD / NO Graphics card  / Finger print reader /4 years PSP /Accidental damage cover / KYHD / 3 years extended battery warranty / Image services )\nQuote no 21933360 \nQuote Date 01/10/2021",
+                "orderedQuantity": 50,
+                "lineItemNumber": 2,
+                "poInvoicedAmount": 60750.0,
+                "requisitionNo": "PR5035"
+            },
+            {
+                "commodityCode": 118169,
+                "commodityDescription": "Wireless Mouse_1",
+                "description": "Kit - Dell Optical Mouse - MS116 - Black - S&P",
+                "orderedQuantity": 350,
+                "lineItemNumber": 1,
+                "poInvoicedAmount": 2450.0,
+                "requisitionNo": "PR5035"
+            },
+            {
+                "commodityCode": 117825,
+                "commodityDescription": "IT - Laptops_1",
+                "description": "Dell Latitude 5420 CTO Base - Option 2 ( i5 proc /16 GB/512 GB SSD /No Graphics card /  Finger print reader /  4 years PSP/ Accidental damage cover / KYHD /  3 years extended battery warranty / Image services  )\nQuote no - 21933360 \nQuote Date 01/10/2021",
+                "orderedQuantity": 300,
+                "lineItemNumber": 3,
+                "poInvoicedAmount": 320100.0,
+                "requisitionNo": "PR5035"
+            }
+        ],
+        "deliveryReportHistory": [
+            {
+                "expectedDeliveryDate": "2023-04-20",
+                "remarks": "Item is not delivered",
+                "status": "Not Delivered",
+                "submittedOn": "2023-02-19",
+                "requisitionNo": "PR5035"
+            }
+        ]
+    },
+    {
+        "requisitionNo": "PR5678",
+        "requesterName": "N, Mr. Praveen Sagar",
+        "requesterEmail": "praveen.karunasagar@quest-global.com",
+        "acmId": "2391",
+        "supplierName": "Bharti Airtel Limited",
+        "supplierEmail": "SAPariba@Quest-global.com",
+        "poOrderNo": "PO2437",
+        "poClosureStatus": "Open",
+        "servicePO": "Yes",
+        "poOrderDate": "14-Feb-2022",
+        "needBy": "18-Feb-2022",
+        "status": "PartiallyServiced",
+        "poOrderedAmount": 77880.0,
+        "grnOrSesAmount": 15573.0,
+        "currency": "INR",
+        "preparerName": "Balakrishnan, Ms. Shubha Mangattil",
+        "preparerEmail": "shubha.balakrishnan@quest-global.com",
+        "buyerName": "Desai, Mr. Parag",
+        "buyerEmail": "parag.desai@quest-global.com",
+        "mailSentDate": null,
+        "uuid": null,
+        "vendorLinkStatus": null,
+        "lineItems": [
+            {
+                "commodityCode": 118348,
+                "commodityDescription": "Telecommunication Charges_1",
+                "description": "Chennai PRI Annual Usage Charge- Buffer cost",
+                "orderedQuantity": 1,
+                "lineItemNumber": 6,
+                "poInvoicedAmount": 573.0,
+                "requisitionNo": "PR5678"
+            },
+            {
+                "commodityCode": 118348,
+                "commodityDescription": "Telecommunication Charges_1",
+                "description": "Chennai PRI Rental charge (Annual)\nPlan Details - Scheme Charges@INR.3000 \nPeriod - 12 Months \nTotal Cost - 3000 *12 = INR.36,000",
+                "orderedQuantity": 1,
+                "lineItemNumber": 5,
+                "poInvoicedAmount": 15000.0,
+                "requisitionNo": "PR5678"
+            },
+            {
+                "commodityCode": 118348,
+                "commodityDescription": "Telecommunication Charges_1",
+                "description": "QGESPL-SGST@9%",
+                "orderedQuantity": 1,
+                "lineItemNumber": 4,
+                "poInvoicedAmount": null,
+                "requisitionNo": "PR5678"
+            },
+            {
+                "commodityCode": 118348,
+                "commodityDescription": "Telecommunication Charges_1",
+                "description": "QGESPL-CGST@9%",
+                "orderedQuantity": 1,
+                "lineItemNumber": 3,
+                "poInvoicedAmount": null,
+                "requisitionNo": "PR5678"
+            },
+            {
+                "commodityCode": 118348,
+                "commodityDescription": "Telecommunication Charges_1",
+                "description": "QGESPL-SGST@9%",
+                "orderedQuantity": 1,
+                "lineItemNumber": 2,
+                "poInvoicedAmount": null,
+                "requisitionNo": "PR5678"
+            },
+            {
+                "commodityCode": 118348,
+                "commodityDescription": "Telecommunication Charges_1",
+                "description": "QGESPL-CGST@9%",
+                "orderedQuantity": 1,
+                "lineItemNumber": 1,
+                "poInvoicedAmount": null,
+                "requisitionNo": "PR5678"
+            }
+        ],
+        "deliveryReportHistory": []
+    },
+    {
+        "requisitionNo": "PR2680",
+        "requesterName": "Mohammed, Mr. Rinaz",
+        "requesterEmail": "rinaz.mohammed@quest-global.com",
+        "acmId": "315351",
+        "supplierName": "Rabita Software",
+        "supplierEmail": "payrcv@rabitasoft.com",
+        "poOrderNo": "PO2662",
+        "poClosureStatus": "Order Closed For All Actions",
+        "servicePO": "No",
+        "poOrderDate": "28-Mar-2022",
+        "needBy": "01-Apr-2022",
+        "status": "Received",
+        "poOrderedAmount": 28120.0,
+        "grnOrSesAmount": 28120.0,
+        "currency": "INR",
+        "preparerName": "Mohammed, Mr. Rinaz",
+        "preparerEmail": "rinaz.mohammed@quest-global.com",
+        "buyerName": null,
+        "buyerEmail": null,
+        "mailSentDate": null,
+        "uuid": null,
+        "vendorLinkStatus": null,
+        "lineItems": [
+            {
+                "commodityCode": 118151,
+                "commodityDescription": "IT  Lease licenses3",
+                "description": "Crunchbase Starter Annual Subscription License",
+                "orderedQuantity": 1,
+                "lineItemNumber": 2,
+                "poInvoicedAmount": 28120.0,
+                "requisitionNo": "PR2680"
+            },
+            {
+                "commodityCode": 118151,
+                "commodityDescription": "IT  Lease licenses3",
+                "description": "QGESPL-IGST@0%",
+                "orderedQuantity": 1,
+                "lineItemNumber": 1,
+                "poInvoicedAmount": null,
+                "requisitionNo": "PR2680"
+            }
+        ],
+        "deliveryReportHistory": [
+            {
+                "expectedDeliveryDate": "2023-03-20",
+                "remarks": null,
+                "status": "Not Delivered",
+                "submittedOn": "2023-02-19",
+                "requisitionNo": "PR2680"
+            },
+            {
+                "expectedDeliveryDate": "2023-03-20",
+                "remarks": "Item is out of stock",
+                "status": "Not Delivered",
+                "submittedOn": "2023-02-19",
+                "requisitionNo": "PR2680"
+            }
+        ]
+    }
+]

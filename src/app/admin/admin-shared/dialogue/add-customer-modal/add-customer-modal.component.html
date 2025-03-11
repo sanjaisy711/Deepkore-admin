@@ -1,0 +1,71 @@
+<div class="row">
+    <div class="dialogue-head col-md-8">
+        <h5 mat-dialog-title *ngIf="!isEditMode">Add New Customer</h5> 
+        <h5 mat-dialog-title *ngIf="isEditMode">Customer Info</h5> 
+    </div>
+    <div class="close-Btns col-md-4">
+        <div class="card close-Card" [mat-dialog-close]>
+            <img src="../../../../../assets/image/fi_x.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="addform-container">
+    <form [formGroup]="addcustomerForm" (ngSubmit)="onSubmit(addcustomerForm)">
+        <div class="row">
+            <div class="col-md-6">
+                <label class="dialogue-label" for="lead_id">Lead</label>
+                <select formControlName="lead_id" name="lead_id" class="w-100 input-Class">
+                    <option *ngFor="let item of leadList" [value]="item._id">{{item.name}}</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="planid">Plan</label>
+                <select formControlName="planid" name="planid" class="w-100 input-Class" (change)="calculatedays($event)">
+                    <option *ngFor="let item of planList" [value]="item._id">{{item.planname}}</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="onboarded_date">On Board Date</label>
+                <mat-form-field appearance="fill" class="col-md-12 datepickerInput">
+                    <input matInput [matDatepicker]="picker" formControlName="onboarded_date" name="onboarded_date" (dateChange)="calcdates($event)" placeholder="MM/DD/YYYY">
+                    <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="subscription_validity">Subscription Validity</label>
+                <mat-form-field appearance="fill" class="col-md-12 datepickerInput">
+                    <!-- <mat-label>Choose a date</mat-label> -->
+                    <input matInput [matDatepicker]="picker1" formControlName="subscription_validity" name="subscription_validity" [disabled]="true" placeholder="MM/DD/YYYY">
+                    <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+                    <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="remind_before">Remaining Days</label>
+                <input type="text" formControlName="remind_before" name="remind_before" class="w-100 input-Class">
+            </div>
+            
+            <div class="col-md-6">
+                <label class="dialogue-label" for="purchase_id">Purchase Id</label>
+                <input type="text" formControlName="purchase_id" name="purchase_id" class="w-100 input-Class">
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="dzitrauser_id">Converted By</label>
+                <select formControlName="dzitrauser_id" name="dzitrauser_id" class="w-100 input-Class">
+                    <option *ngFor="let item of dzitraUserList" [value]="item._id">{{item.name}}</option>
+                </select>            
+            </div>
+        </div>
+        <div class="button col-md-12">
+            <button type="submit" class="createLead-Btns" *ngIf="!isEditMode && !readOnly && !isInfoOnly">Add Customer</button>
+            <button type="submit" class="createLead-Btns" *ngIf="isEditMode && !readOnly && !isInfoOnly">Save</button>
+            <!-- <button type="submit" class="createLead-Btns" *ngIf="readOnly" (click)="editinfo()">Edit</button> -->
+            <button type="submit" class="createLead-Btns" *ngIf="isInfoOnly || readOnly" [mat-dialog-close]> Close</button>
+
+        </div>
+    </form>
+</div>
+ 

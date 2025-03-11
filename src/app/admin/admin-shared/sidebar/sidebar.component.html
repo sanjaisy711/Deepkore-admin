@@ -1,0 +1,20 @@
+<div class="sidebar">
+    <div class="menu-list">
+        <ul class="menus" id="nav">
+            <li (click)="addClass($event, 'dashboard')" [routerLink]="['/admin/dashboard']" routerLinkActive="router-link-active"> <img *ngIf="!dashboardIcon" class="menu-icons" src="../../../../assets/image/sidebar-logo/Logodashboard-svg.svg" alt=""> <img class="menu-icons" *ngIf="dashboardIcon" src="../../../../assets/image/sidebar-logo/activeLogodashboard.svg" alt=""> Dashboard</li>
+            <li (click)="addClass($event, 'lead')" [routerLink]="['/admin/lead-management/list']" routerLinkActive="router-link-active"><img *ngIf="!leadIcon" class="menu-icons" src="../../../../assets/image/sidebar-logo/Logo-Lead.svg" alt=""> <img *ngIf="leadIcon" class="menu-icons" src="../../../../assets/image/sidebar-logo/activeleadlogo.svg" alt="">Leads</li>
+            <li (click)="addClass($event, 'customer')" [routerLink]="['/admin/customer/list']" routerLinkActive="router-link-active"><img *ngIf="!customerIcon" class="menu-icons" src="../../../../assets/image/sidebar-logo/Logo-customer.svg" alt=""><img *ngIf="customerIcon" class="menu-icons" src="../../../../assets/image/sidebar-logo/activelogocustomer.svg" alt="">Customers</li>
+            <li (click)="addClass($event, 'plan')" [routerLink]="['/admin/plan/list']" routerLinkActive="router-link-active"><img *ngIf="!planIcon" class="menu-icons" src="../../../../assets/image/sidebar-logo/Logo-plansvg.svg" alt=""> <img *ngIf="planIcon" class="menu-icons" src="../../../../assets/image/sidebar-logo/activeplanlogo.svg" alt="">Plan</li>
+            <li (click)="addClass($event, 'subscription')" [routerLink]="['/admin/subscription/list']" routerLinkActive="router-link-active"><img *ngIf="!subscriptionIcon" class="menu-icons" src="../../../../assets/image/sidebar-logo/Logo-subscription.svg" alt=""><img *ngIf="subscriptionIcon" class="menu-icons" src="../../../../assets/image/sidebar-logo/activesubscritionlogo.svg" alt="">Subscription</li>
+            <li (click)="addClass($event, 'news')" [routerLink]="['/admin/newsletter/list']" routerLinkActive="router-link-active"><img *ngIf="!newsletterIcon" class="menu-icons" src="../../../../assets/image/sidebar-logo/Logonewletter-svg.svg" alt=""><img *ngIf="newsletterIcon" class="menu-icons" src="../../../../assets/image/sidebar-logo/activenewletterlogo.svg" alt="">Newsletter</li>
+
+            <!-- <li><img class="menu-icons" src="../../../assets/image/Setting.png" alt="">Settings</li> -->
+        </ul>
+    </div>
+    <div class="buttonsBottom">
+        <button class="supportBtn buttOn"><img src="../../../assets/image/fi_headphones.png" alt=""> Contact
+            Support</button>
+        <button class="log-outBtn buttOn" (click)="logout()"><img src="../../../assets/image/Logout.png" alt="">
+            Logout</button>
+    </div>
+</div>

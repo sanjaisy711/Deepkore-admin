@@ -1,0 +1,96 @@
+<!-- <div class="header-container row">
+    <div class="logo col-md-2">
+        <img src="../../../assets/image/dashboardlogo.png" alt="">
+    </div>
+    <div class="banner col-md-10">
+        <div class="row">
+            <div class="col-md-5 align-center">
+               
+                <div class="search-box col-md-4"><input class="search-input" type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="col-md-7 align-center">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="icons col-md-5">
+                        <div class="row">
+                            <div class="col-md-4 banner-icons">
+                                <img src="../../../assets/image/Message.png" alt="">
+                            </div>
+                            <div class="col-md-4 banner-icons">
+                                <img src="../../../assets/image/Notification.png" alt="">
+                            </div>
+                            <div class="col-md-4 banner-icons">
+                                <img src="../../../assets/image/profile 1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="header-container row web-container">
+    <div class="logo col-md-2">
+        <img src="../../../assets/image/dashboardlogo.png" alt="">
+    </div>
+    <div class="col-md-10 row align-center">
+        <div class="col-md-5">
+            <input class="search-input" type="text" placeholder="Search">
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-4 row">
+            <!-- <div class="row"> -->
+            <div class="col-md-6"></div>
+            <div class="col-md-2 banner-icons">
+                <img src="../../../assets/image/Message.png" alt="">
+            </div>
+            <div class="col-md-2 banner-icons">
+                <img src="../../../assets/image/Notification.png" alt="">
+            </div>
+            <div class="col-md-2 banner-icons">
+                <img src="../../../assets/image/profile 1.png" alt="">
+            </div>
+            <div class="col-md-1"></div>
+            <!-- </div> -->
+        </div>
+    </div>
+</div>
+<div class="mobile-container">
+    <div class="row mob-grid">
+        <div class="col-md-10">
+            <div class="mob-logo">
+                <img src="../../../assets/image/dashboardlogo.png" alt="">
+            </div>
+        </div>
+        <div class="col-md-2 menu-bars-outer">
+            <div class="menu-bar" [ngClass]="isCross ? 'change' : 'menu-bar'" (click)="this.isCross = !this.isCross">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-container" *ngIf="isCross">
+        <div class="sidebar">
+            <div class="menu-list">
+                <ul class="menus" id="nav">
+                    <li (click)="addClass($event)" [routerLink]="['/admin/dashboard']" routerLinkActive="router-link-active"> <img class="menu-icons" src="../../../../assets/image/dashboard-icon.png" alt=""> Dashboard</li>
+                    <li (click)="addClass($event)" [routerLink]="['/admin/lead-management/list']" routerLinkActive="router-link-active"><img class="menu-icons" src="../../../../assets/image/Bag.png" alt="">Leads</li>
+                    <li (click)="addClass($event)" [routerLink]="['/admin/customer/list']" routerLinkActive="router-link-active"><img class="menu-icons" src="../../../../assets/image/2 User.png" alt="">Customers</li>
+                    <li (click)="addClass($event)" [routerLink]="['/admin/plan/list']" routerLinkActive="router-link-active"><img class="menu-icons" src="../../../../assets/image/plan-icon.png" alt="">Plan</li>
+                    <li (click)="addClass($event)" [routerLink]="['/admin/subscription/list']" routerLinkActive="router-link-active"><img class="menu-icons" src="../../../../assets/image/subscription-icon.png" alt="">subscription</li>
+                    <li (click)="addClass($event)" [routerLink]="['/admin/newsletter/list']" routerLinkActive="router-link-active"><img class="menu-icons" src="../../../../assets/image/newsletter-icon.png" alt="">Newsletter</li>
+                    <!-- <li><img class="menu-icons" src="../../../assets/image/Setting.png" alt="">Settings</li> -->
+                </ul>
+            </div>
+            <div class="buttonsBottom">
+                <button class="supportBtn buttOn"><img src="../../../assets/image/fi_headphones.png" alt=""> Contact
+                    Support</button>
+                <button class="log-outBtn buttOn" (click)="logout()"><img src="../../../assets/image/Logout.png" alt="">
+                    Logout</button>
+            </div>
+        </div>
+    </div>
+</div>

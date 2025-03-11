@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+html
+    overflow-x: hidden
+.container
+    max-width: 100% !important
+    margin: 0 !important
+    padding: 0 !important
+    font-family: 'Outfit'
+    overflow-x: hidden
+.row
+    display: flex
+.txt-right
+    text-align: end
+.txt-c
+    text-align: center
+.txt-left
+    text-align: left
+.p-0
+    padding: 0
+.mat-form-field-label
+    display: flex !important
+.align-center
+    align-items: center
+.container-Bg
+    background: #F0F6FF
+.w-100
+    width: 100%
+.close-Btns
+    justify-content: end
+    display: grid
+    cursor: pointer
+.close-Card
+    height: fit-content !important
+    background: #F5F5F5
+.input-Class
+    background: #F5F5F5
+    border: none
+    padding: 8px 16px
+    border-radius: 5px
+    height: 40px
+.textArea-class
+    min-height: 90px
+    background: #F5F5F5
+    border: none
+    border-radius: 10px
+.dialogue-label
+    color: #878C99
+    font-weight: 400
+    font-size: 12px
+.createLead-Btns
+    height: 58px
+    background: #1F51FF
+    border-radius: 100px
+    font-weight: 500
+    font-size: 16px
+    text-align: center
+    color: #FFFFFF
+    width: 100%
+    border: none
+    margin: 20px 0px
+.mat-dialog-container
+    overflow: auto
+    max-height: 600px !important
+    min-height: fit-content
+    border-radius: 15px !important
+.datepickerInput>.mat-form-field-wrapper>.mat-form-field-flex
+    height: 40px
+    padding: 0px 5px
+.datepickerInput>.mat-form-field-wrapper
+    padding-bottom: 5px
+
+
+@media only screen and (max-width: 600px)
+    .mat-dialog-container
+        overflow: auto
+        max-height: 600px !important
+        min-height: fit-content
+    body
+        overflow-x: hidden !important
+@media only screen and (min-width: 768px) and (max-width: 850px) 
+    .mat-dialog-container
+        overflow: auto
+        max-height: 600px !important
+        min-height: fit-content
+    body
+        overflow-x: hidden !important
+    .cdk-global-overlay-wrapper
+        display: flex
+        position: absolute
+        z-index: 1000
+        overflow: auto
+        pointer-events: auto

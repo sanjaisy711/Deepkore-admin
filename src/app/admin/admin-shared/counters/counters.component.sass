@@ -1,0 +1,60 @@
+.justify-summary
+    justify-content: center
+    display: flex
+    color: #FFFFFF
+    border-radius: 12px
+    width: 31%
+    height: 102px
+    align-items: center
+    margin: 10px
+    // background-image: Url('../../../assets/image/summary-bubble.png') no-repeat
+
+.target-txt
+    font-weight: 400
+    font-size: 12px
+    line-height: 20px
+    display: flex
+    align-items: center
+    color: #FFFFFF
+.ping-bg
+    background: Url('../../../assets/image/summary-bubble.png'), linear-gradient(90deg, #FFBF96 0%, #FE7096 100%)
+    background-repeat: no-repeat
+    background-position: right
+.blue-bg
+    background: Url('../../../assets/image/summary-bubble.png'),linear-gradient(90deg, #90CAF9 0%, #047EDF 99%)
+    background-repeat: no-repeat
+    background-position: right
+.pale-bg
+    background: Url('../../../assets/image/summary-bubble.png'),linear-gradient(90deg, #84D9D2 0%, #07CDAE 100%)
+    background-repeat: no-repeat
+    background-position: right
+.count-No
+    padding: 0px 15px
+
+@media only screen and (max-width: 600px)
+    .justify-summary
+        width: 90%
+    .container-Bg
+        justify-content: center
+    .counters-innerElem
+        width: 100%
+    .firstRow-Counter
+        display: grid
+        grid-template-columns: 20% 80%
+        margin: 20px 0px
+    .summary-img
+        width: 85%
+    .summary-txt
+        align-items: center
+        display: flex
+    .secondRow-counter
+        display: grid
+        grid-template-columns: 20% 20% 20% 25%
+        padding-bottom: 22px
+    .thirdRow-counter
+        display: grid
+        grid-template-columns: auto auto
+        padding: 0px 10px 15px 0px
+@media only screen and (min-width: 768px) and (max-width: 850px) 
+    .justify-summary
+        width: 95%

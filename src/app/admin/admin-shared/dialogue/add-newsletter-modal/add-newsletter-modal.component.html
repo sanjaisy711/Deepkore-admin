@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="dialogue-head col-md-8">
+        <h5 mat-dialog-title *ngIf="!isEditMode">Add New Newsletter</h5>
+        <h5 mat-dialog-title *ngIf="isEditMode">Newsletter Info</h5>
+    </div>
+    <div class="close-Btns col-md-4">
+        <div class="card close-Card" [mat-dialog-close]>
+            <img src="../../../../../assets/image/fi_x.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="addform-container">
+    <form [formGroup]="addnewsletterForm" (ngSubmit)="onSubmit(addnewsletterForm)">
+        <div class="row">
+            <div class="col-md-6">
+                <label class="dialogue-label" for="email">Email Id</label>
+                <input type="email" formControlName="email" name="email" class="w-100 input-Class">
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="emailvalidated">Email Validated</label>
+                <select formControlName="emailvalidated" name="emailvalidated" class="w-100 input-Class">
+                    <option [value]="true">Yes</option>
+                    <option [value]="false">No</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="optedout">Opted Out</label>
+                <select formControlName="optedout" name="optedout" class="w-100 input-Class">
+                    <option [value]="true">Yes</option>
+                    <option [value]="false">No</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="is_customer">Is Customer</label>
+                <select formControlName="is_customer" name="is_customer" class="w-100 input-Class">
+                    <option [value]="true">Yes</option>
+                    <option [value]="false">No</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="is_lead">Is Lead</label>
+                <select formControlName="is_lead" name="is_lead" class="w-100 input-Class">
+                    <option [value]="true">Yes</option>
+                    <option [value]="false">No</option>
+                </select>
+            </div>
+        </div>
+        <div class="button col-md-12">
+            <button type="submit" class="createLead-Btns" *ngIf="!isEditMode && !readonly">Add Newsletter</button>
+            <button type="submit" class="createLead-Btns" *ngIf="isEditMode && !readonly">Save</button>
+            <button type="submit" class="createLead-Btns" *ngIf="readonly" (click)="editinfo()">Edit</button>
+
+        </div>
+    </form>
+</div>

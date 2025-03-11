@@ -1,0 +1,70 @@
+<div class="row">
+    <div class="dialogue-head col-md-8">
+        <h5 mat-dialog-title>Status Update</h5>
+    </div>
+    <div class="close-Btns col-md-4">
+        <div class="card close-Card" [mat-dialog-close]>
+            <img src="../../../../../assets/image/fi_x.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="statusform-container">
+    <form [formGroup]="statusform" (ngSubmit)="onSubmit(statusform)">
+        <div class="row">
+            <div class="col-md-4">
+                <label class="dialogue-label" for="leadstatus_id">Status</label>
+                <select formControlName="leadstatus_id" name="leadstatus_id" class="w-100 input-Class" >
+                    <option *ngFor="let item of statusList" [value]="item._id">{{item.name}}</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label class="dialogue-label" for="updateddate">Date</label>
+                <!-- <mat-form-field appearance="outline">
+                    <input matInput [matDatepicker]="picker" formControlName="date" name="date">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field> -->
+                  <mat-form-field appearance="fill" class="col-md-12 datepickerInput">
+                    <!-- <mat-label>Choose a date</mat-label> -->
+                    <input matInput [matDatepicker]="picker" formControlName="updateddate" name="updateddate" placeholder="MM/DD/YYYY">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+            </div>
+            <div class="col-md-4">
+                <label class="dialogue-label" for="dzitrauser_id">Assigned to</label>
+                <select formControlName="dzitrauser_id" name="dzitrauser_id" class="w-100 input-Class">
+                    <option *ngFor="let item of dzitraUserList" [value]="item._id">{{item.name}}</option>
+                </select>  
+            </div>
+            <div class="col-md-12">
+                <label class="dialogue-label" for="comments">Comments</label>
+                <textarea class="w-100 textArea-class" formControlName="comments" name="comments">
+                </textarea>
+            </div>
+            <div class="col-md-6 statusModal-btns">
+                <button class="reset-Btn w-100">Reset</button>
+            </div>
+            <div class="col-md-6 statusModal-btns">
+                <button class="add-Btn w-100">Add</button>
+            </div>
+        </div>
+    </form>
+    <div class="statustable-container col-md-12">
+        <table class="status-Tableinner">
+            <tr class="statustable-header">
+                <th>Serial No.</th>
+                <th>Status</th>
+                <th>Date</th>
+                <th>Comments</th>
+            </tr>
+            <tr *ngFor="let item of statusData; let i = index; " class="statustable-row">
+                <td >{{i+1}} </td>
+                <td >{{getleadname(item.leadstatus_id)}} </td>
+                <td >{{item.updateddate | date}} </td>
+                <td >{{item.comments}} </td>
+            </tr>
+        </table>
+    </div>
+</div>

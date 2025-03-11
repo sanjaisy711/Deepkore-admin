@@ -1,0 +1,101 @@
+<div class="container">
+    <div class="signIn-container">
+        <div class="signin-innerImgs">
+            <!-- <img class="bg-img1 bg-images" src="../../../assets/image/signin1.png" alt="">
+            <img class="bg-img2 bg-images" src="../../../assets/image/signin4.png" alt="">
+            <img class="bg-img3 bg-images" src="../../../assets/image/signin3.png" alt="">
+            <img class="bg-img4 bg-images" src="../../../assets/image/signin2.png" alt=""> -->
+            <div class="login-card">
+                <div class="row">
+                    <div class="col-md-6 login-details">
+                        <!-- <div class="col-md-3 ">
+                            <img class="login-logo mar-5" src="../../../assets/image/dzitra logo.jpeg" alt="">
+                        </div> -->
+                        <div class="welcome-head mar-5">
+                            Login to Your Account
+                        </div>
+                        <div class="welcome-subhead mar-5">
+                            Please Enter Your Detail Below
+                        </div>
+                        <div class="form-section">
+                            <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)">
+                            <mat-form-field appearance="outline" class="mar-5 login-input" >
+                                <mat-label>Email address</mat-label>
+                                <input matInput type="email" formControlName="username">
+                            </mat-form-field>
+                            <div class="forget-pass" [routerLink]="['/forget-password']" routerLinkActive="router-link-active">Forgot your password?</div>
+                            <mat-form-field appearance="outline" class="mar-5 login-input" >
+                                <mat-label>Password</mat-label>
+                                <input matInput type="password" formControlName="password">
+                            </mat-form-field>
+                            <div class="buttons">
+                                <button class="login-btn">Log In</button>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 line"></div>
+                            <div class="col-md-4 seprator">Or Log In</div>
+                            <div class="col-md-4 line"></div>
+                        </div>
+                        <div class="google-login">
+                            <div class="google-login-inner">
+                                <div class="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6">
+                                        <div class="row google-btnGrid">
+                                            <div class="col-md-4 g-img-outer">
+                                                <img class="g-image" src="../../../assets/image/Image.png" alt="">
+                                            </div>
+                                            <div class="col-md-8 g-txt">
+                                                With Google
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 grapical-section">
+                        <!-- <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-7 p-0">
+                                <div class="signUp-guide ">Don't have a Dzitra account? </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="sign-up" [routerLink]="['/sign-up']" routerLinkActive="router-link-active" >Sign Up</div>
+                            </div>
+                            <div class="Grapical-img-Sec">
+                                <img class="grapicalImg-inner" src="../../../assets/image/Group.png" alt="">
+                            </div>
+                            <div class="grapical-head">
+                                Passwordless sign-in
+                            </div>
+                            <div class="grapical-sub">
+                                Get rid of risky passwords and enjoy
+                                one-tap access to dzitra. Install
+                                OneAuth after downloading it.
+                            </div>
+                            <div class="grapical-dot">
+                                <div class="graphical-dot-inner">
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="big-logo">
+                            <img [routerLink]="['/home']" routerLinkActive="router-link-active"  src="../../../assets/image/signIn-logo.png" alt="">
+                        </div>
+                        <!-- <div class="row dnt-haveSection">
+                            <div class="signUp-guide col-md-8 txt-right">Don't have a Dzitra account? </div>
+                            <div class="sign-up col-md-4 p-0"  >Sign Up</div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="copy-Right">© 2022,Dzitra Corporation Pvt. Ltd. All Rights Reserved.</div> -->
+    </div>
+
+</div>

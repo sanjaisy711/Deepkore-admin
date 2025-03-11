@@ -1,0 +1,94 @@
+<div class="row dialogue-container">
+    <div class="dialogue-head col-md-8">
+        <h5 mat-dialog-title *ngIf="!isEditMode">Create New Lead</h5> 
+        <h5 mat-dialog-title *ngIf="isEditMode">Lead Info</h5> 
+    </div>
+    <div class="close-Btns col-md-4">
+        <div class="card close-Card" [mat-dialog-close]>
+            <img src="../../../../../assets/image/fi_x.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="addform-container">
+    <form [formGroup]="addLeadForm" (ngSubmit)="onSubmit(addLeadForm)">
+        <div class="row">
+            <div class="col-md-6">
+                <label class="dialogue-label" for="name">Name</label>
+                <input type="text" formControlName="name" name="name" required class="w-100 input-Class">
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="industry">Industry</label>
+                <select formControlName="industry_id" name="industry_id" class="w-100 input-Class">
+                    <option *ngFor="let item of industryList" [value]="item._id">{{item.industrytype}}</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="business_email">Email</label>
+                <input type="email" formControlName="business_email" name="business_email" required class="w-100 input-Class">
+            </div>
+            <div class="col-md-6 row" *ngIf="isWebMode">
+                <label class="dialogue-label">Mobile</label>
+                <div class="col-md-4">
+                    <select formControlName="country" name="country" class="w-100 input-Class" >
+                        <option value="IN">+91</option>
+                        <option value="Ar">+93</option>
+                        <option value="UAE">+355</option>
+                        <option value="BI">+88</option>
+                    </select>
+                </div>
+                <!-- <label class="dialogue-label">Mobile</label> -->
+                <div class="col-md-8 p-0">
+                    <input type="number" formControlName="mobile" name="mobile" required class="w-100 input-Class">
+                </div>
+            </div>
+            <div class="col-md-6 row" *ngIf="!isWebMode">
+                <label class="dialogue-label">Mobile</label>
+                <div class="col-md-3 mobileSection">
+                    <select formControlName="country" name="country" class="w-100 input-Class" >
+                        <option value="IN">+91</option>
+                        <option value="Ar">+93</option>
+                        <option value="UAE">+355</option>
+                        <option value="BI">+88</option>
+                    </select>
+                    <input type="number" formControlName="mobile" name="mobile" required class="w-100 input-Class typeMobileNumber">
+
+                </div>
+                <!-- <label class="dialogue-label">Mobile</label> -->
+                <div class="col-md-9 p-0">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="company_name">Company Name</label>
+                <input type="text" formControlName="company_name" name="company_name" class="w-100 input-Class">
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="company_size">Company Size</label>
+                <select formControlName="company_size" name="company_size" class="w-100 input-Class">
+                    <option [value]=1>10-100</option>
+                    <option [value]=2>100-150</option>
+                </select>
+            </div>
+            <div class="col-md-12">
+                <label class="dialogue-label" for="brief_business_requirement">Brief Business Requirement</label>
+                <textarea class="w-100 textArea-class" formControlName="brief_business_requirement" name="brief_business_requirement">
+
+                </textarea>
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="source">Source</label>
+                <select formControlName="source" name="source" class="w-100 input-Class">
+                    <option>Website</option>
+                    <option>Social Media</option>
+                </select>
+            </div>
+        </div>
+        <div class="button col-md-12">
+            <button type="submit" class="createLead-Btns" *ngIf="!isEditMode && !readOnly && !isInfoOnly">Create Lead</button>
+            <button type="submit" class="createLead-Btns" *ngIf="isEditMode && !readOnly && !isInfoOnly">Save</button>
+            <button type="submit" class="createLead-Btns" *ngIf="readOnly " (click)="editinfo()">Edit</button>
+            <button type="submit" class="createLead-Btns" *ngIf="isInfoOnly" [mat-dialog-close]> Close</button>
+            
+        </div>
+    </form>
+</div>
+ 

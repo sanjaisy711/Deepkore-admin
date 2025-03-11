@@ -1,0 +1,17 @@
+<div class="popupBox-container">
+    <div class="success-img" *ngIf="dialoguedata.isSuccess">
+        <img src="../../../../../assets/image/dialoge-success.png" alt="">
+    </div>
+    <h1 mat-dialog-title class="txt-c dialogue-title">{{dialoguedata.title}}</h1>
+    <div mat-dialog-content class="txt-c dialogue-text">{{dialoguedata.text}}</div>
+    <div mat-dialog-actions *ngIf="dialoguedata.actions" class="actionbtn-Section">
+        <button class="popUp-negBtn" mat-button mat-dialog-close
+            *ngIf="dialoguedata.Negativebtn">{{dialoguedata.Negativebtn}}</button>
+        <button class="popUp-postBtn" mat-button *ngIf="dialoguedata.positivebtn"
+            (click)="positivBtnClick()">{{dialoguedata.positivebtn}}</button>
+    </div>
+    <div *ngIf="dialoguedata.showOnly">
+        <button mat-button mat-dialog-close *ngIf="dialoguedata.Btn"
+            class="dialogue-PosBtn">{{dialoguedata.Btn}}</button>
+    </div>
+</div>

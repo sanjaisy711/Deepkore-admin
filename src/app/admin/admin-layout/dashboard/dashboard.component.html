@@ -1,0 +1,52 @@
+<app-counters></app-counters>
+<div class="container">
+    <div class="dashboard-container">
+        <div class="row">
+            <div class="main-container">
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="chart" class="bar-chart">
+                                <p-chart type="bar" [data]="barchartdata" [options]="barchartdata.options" height="400"> </p-chart>
+                        </div>
+                    </div>
+                    <div class="col-md-6 row ">
+                            <div class="col-md-6 donutChartsSection">
+                                <div class="piecharts-bg">
+                                    <div class="chart-title">
+                                        <p class="chartTitle-txt">Spendings</p>
+                                        <p class="chart-subTitle">Payments</p>
+                                    </div>
+                                    <p-chart type="pie" [data]="piechartdata" [options]="piechartdata.options" [style]="{'width': '99%'}"></p-chart>
+                                </div>
+                            </div>
+                            <div class="col-md-6 donutChartsSection">
+                                <!-- <apx-chart [series]="donutchartOptions.series" [chart]="donutchartOptions.chart"
+                                    [labels]="donutchartOptions.labels"
+                                    [responsive]="donutchartOptions.responsive"></apx-chart> -->
+                                    <div class="piecharts-bg">
+                                        <div class="chart-title">
+                                            <p class="chartTitle-txt">Spendings</p>
+                                            <p class="chart-subTitle">Payments</p>
+                                        </div>
+                                        <p-chart type="doughnut" [data]="dounutchartdata" [style]="{'width': '99%'}"></p-chart>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 line-chart">
+                            <!-- <apx-chart [series]="lineChartOptions.series" [chart]="lineChartOptions.chart"
+                                [xaxis]="lineChartOptions.xaxis" [stroke]="lineChartOptions.stroke"
+                                [tooltip]="lineChartOptions.tooltip" [dataLabels]="lineChartOptions.dataLabels"
+                                [legend]="lineChartOptions.legend" [markers]="lineChartOptions.markers"
+                                [grid]="lineChartOptions.grid" [yaxis]="lineChartOptions.yaxis"
+                                [title]="lineChartOptions.title"></apx-chart> -->
+                                <p-chart type="line" [data]="linechartData" height="400"></p-chart>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,4588 @@
+{
+	"info": {
+		"_postman_id": "3ebf15fa-c3df-49b1-9069-c1039d7fb73b",
+		"name": "Dzitra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Common",
+			"item": [
+				{
+					"name": "Active Status - Internal",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collection\":\"user\",\r\n    \"ids\":[\"63d00d7810c212595d36c428\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/common/active",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"common",
+								"active"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inactive Status - Internal",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collection\":\"user\",\r\n    \"ids\":[\"63c9718f9d44935c7e3dd405\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/common/inactive",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"common",
+								"inactive"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Archive Status - Internal",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collection\":\"user\",\r\n    \"ids\":[\"63c9718f9d44935c7e3dd405\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/common/archive",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"common",
+								"archive"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Status - Internal",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collection\":\"user\",\r\n    \"ids\":[\"63c9718f9d44935c7e3dd405\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/common/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"common",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Active Status - External",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collection\":\"user\",\r\n    \"ids\":[\"63c9718f9d44935c7e3dd405\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/common/active/ext",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"common",
+								"active",
+								"ext"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inactive Status - External",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collection\":\"user\",\r\n    \"ids\":[\"63c9718f9d44935c7e3dd405\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/common/inactive/ext",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"common",
+								"inactive",
+								"ext"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Archive Status - External",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collection\":\"user\",\r\n    \"ids\":[\"63c9718f9d44935c7e3dd405\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/common/archive/ext",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"common",
+								"archive",
+								"ext"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Status - External",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collection\":\"user\",\r\n    \"ids\":[\"63c9718f9d44935c7e3dd405\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/common/delete/ext",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"common",
+								"delete",
+								"ext"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Save User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\": \"c3\",\r\n    \"middlename\": \"cm3\",\r\n    \"lastname\": \"cl3\",\r\n    \"displayname\": \"CP3\",\r\n    \"email\": \"cp3@mail.in\",\r\n    \"mobile\": \"08974563322\",\r\n    \"managerid\": \"\",\r\n    \"emailinvite\": true,\r\n    \"twofaenrollment\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/user",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"63c9718f9d44935c7e3dd405\",\r\n    \"firstname\": \"c5\",\r\n    \"middlename\": \"cm5\",\r\n    \"lastname\": \"cl5\",\r\n    \"displayname\": \"CP5\",\r\n    \"email\": \"cp5@mail.in\",\r\n    \"mobile\": \"08974563225\",\r\n    \"internalid\": null,\r\n    \"managerid\": \"\",\r\n    \"usertypeid\": null,\r\n    \"emailinvite\": true,\r\n    \"twofaenrollment\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/user",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/user/63c9718f9d44935c7e3dd405",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"63c9718f9d44935c7e3dd405"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User List - Active & Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/user/list/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"list",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User List - All Status",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/user/all/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"all",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User List - Active",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/user/active/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"active",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User List - Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/user/inactive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"inactive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User List - Archive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/user/archive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"archive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User List - Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/user/delete/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"delete",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "Save Role",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\":\"R4\",\r\n\"parentid\":\"63d00e8510c212595d36c42d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/role",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Role",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"63cc2bf704b1ba729b819840\",\r\n    \"name\": \"test1\",\r\n    \"parentid\": \"63aabc12cbf1e2db67c55d0d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/role",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Role",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/role/63aabc12cbf1e2db67c55d0d",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"role",
+								"63aabc12cbf1e2db67c55d0d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Role List - Active & Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/role/list/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"role",
+								"list",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Role List - All Status",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/role/all/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"role",
+								"all",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Role List - Active",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/role/active/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"role",
+								"active",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Role List - Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/role/inactive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"role",
+								"inactive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Role List - Archive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/role/archive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"role",
+								"archive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Role List - Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/role/delete/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"role",
+								"delete",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Active Roles",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/role/all/active",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"role",
+								"all",
+								"active"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Role",
+			"item": [
+				{
+					"name": "Save User Role",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userid\":\"63d00d7810c212595d36c428\",\r\n    \"roleid\":\"63d00e8e10c212595d36c42e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/userrole",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"userrole"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Role of the User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/userrole/63d00d7810c212595d36c428",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"userrole",
+								"63d00d7810c212595d36c428"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Role",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\":\"63d00f9310c212595d36c430\",\r\n    \"userid\":\"63d00d7810c212595d36c428\",\r\n    \"roleid\":\"63d00e8e10c212595d36c42e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/userrole",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"userrole"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "News Letter",
+			"item": [
+				{
+					"name": "Save News Letter",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"nwsl1@mail.in\",\r\n    \"emailvertified\":false,\r\n    \"optedout\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/newsletter",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"newsletter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update News Letter",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"63d09847de3a3a0c016c12ab\",\r\n    \"email\":\"nwslu1@mail.in\",\r\n    \"emailvertified\":true,\r\n    \"optedout\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/newsletter",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"newsletter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get News Letter",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/newsletter/63d09847de3a3a0c016c12ab",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"newsletter",
+								"63d09847de3a3a0c016c12ab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "News Letter List - Active & Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/newsletter/list/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"newsletter",
+								"list",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "News Letter List - All Status",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/newsletter/all/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"newsletter",
+								"all",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "News Letter List - Active",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/newsletter/active/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"newsletter",
+								"active",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "News Letter List - Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/newsletter/inactive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"newsletter",
+								"inactive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "News Letter List - Archive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/newsletter/archive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"newsletter",
+								"archive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "News Letter List - Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/newsletter/delete/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"newsletter",
+								"delete",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lead",
+			"item": [
+				{
+					"name": "Create Lead",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"test 3\",\r\n    \"business_email\":\"testb3@mail.in\",\r\n    \"mobile\":\"9045693933\",\r\n    \"country\":\"IN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/lead",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"lead"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Lead",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "default"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\":\"63d95d02cbd754942796bbb2\",\r\n    \"name\":\"test 3 u\",\r\n    \"business_email\":\"testb3u@mail.in\",\r\n    \"mobile\":\"9045693933\",\r\n    \"country\":\"IN\",\r\n    \"brief_business_requirement\":\"desst0\",\r\n    \"company_name\":\"1ddff\",\r\n    \"company_size\":2,\r\n    \"source\":\"online\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/lead",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"lead"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Lead",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/lead/63f0f0093e48a2d37cf49f0e",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"lead",
+								"63f0f0093e48a2d37cf49f0e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead List - Active & Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/lead/list/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"lead",
+								"list",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead List - All Status",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/lead/all/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"lead",
+								"all",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead List - Active",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/lead/active/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"lead",
+								"active",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead List - Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/lead/inactive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"lead",
+								"inactive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead List - Archive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/lead/archive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"lead",
+								"archive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead List - Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/lead/delete/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"lead",
+								"delete",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Send Invite Link",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "default"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"63d95d02cbd754942796bbb2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/lead/invite",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"lead",
+								"invite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Invite Link Validity Check",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZDk1ZDE4Y2JkNzU0OTQyNzk2YmJiMyIsImVtYWlsIjoidGVzdGIzQG1haWwuaW4iLCJzdWIiOiJjdXN0b21lciIsImlhdCI6MTY3Njk0NzM0NCwiZXhwIjoxNjc2OTQ3OTQ0fQ.4aNvZzT7BwZG51rK9PdQ6EKq9PdMU0P0xBGgv0Bxa2w",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/customer/lead/check/link",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"customer",
+								"lead",
+								"check",
+								"link"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Invite Password Submit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZDk1ZDE4Y2JkNzU0OTQyNzk2YmJiMyIsImVtYWlsIjoidGVzdGIzQG1haWwuaW4iLCJzdWIiOiJjdXN0b21lciIsImlhdCI6MTY3Njk0NzM0NCwiZXhwIjoxNjc2OTQ3OTQ0fQ.4aNvZzT7BwZG51rK9PdQ6EKq9PdMU0P0xBGgv0Bxa2w",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"lead@22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/customer/lead/submit/link",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"customer",
+								"lead",
+								"submit",
+								"link"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Type",
+			"item": [
+				{
+					"name": "Save User Type",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "default"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"t1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/usertype",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"usertype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Type",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "default"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\":\"63d9c414eb3c829b40f9ba39\",\r\n    \"name\":\"t1 u\",\r\n    \"description\":\"d1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/usertype",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"usertype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Type",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/usertype/63d9c414eb3c829b40f9ba39",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"usertype",
+								"63d9c414eb3c829b40f9ba39"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Type List - Active & Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/usertype/list/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"usertype",
+								"list",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Type List - All Status",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/usertype/all/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"usertype",
+								"all",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Type List - Active",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/usertype/active/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"usertype",
+								"active",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Type List - Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/usertype/inactive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"usertype",
+								"inactive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Type List - Archive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/usertype/archive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"usertype",
+								"archive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Type List - Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/usertype/delete/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"usertype",
+								"delete",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Active User Types",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/usertype/all/active",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"usertype",
+								"all",
+								"active"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Industry Type",
+			"item": [
+				{
+					"name": "Get All Active Plan Types",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/industrytype/all/active",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"industrytype",
+								"all",
+								"active"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Settings",
+			"item": [
+				{
+					"name": "Update SMTP",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "default"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mode\": 1,\r\n    \"client\": \"seoworld2022@gmail.com\",\r\n    \"secret\": \"wdtnuojsodsihrkr\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/settings/smtp",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"settings",
+								"smtp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update General Setting",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Dzitra\",\r\n    \"site_url\": \"http://localhost:3001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/settings/general",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"settings",
+								"general"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Email Template",
+			"item": [
+				{
+					"name": "Create Email Template",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "default"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Lead Invite\",\r\n    \"sender\":\"invite@dzitra.com\",\r\n    \"sender_name\":\"Dzitra\",\r\n    \"subject\":\"{{title}} Invite Mail\",\r\n    \"content\":\"<p>&nbsp;</p><table style=\\\"margin: 0 auto; padding: 0; color: #000; background: #FAFAFA; padding-top: 40px; padding-bottom: 40px; font-family: Helvetica;\\\" border=\\\"0\\\" width=\\\"600px\\\" cellspacing=\\\"0\\\" cellpadding=\\\"0\\\"><tbody><tr><td><table class=\\\"full-widths;\\\" style=\\\"margin: 0px auto; border-spacing: 0; border-collapse: initial; width: 600px; background: #fff;\\\"><tbody><tr><td><table class=\\\"full-widths;\\\" style=\\\"margin: 0px auto; border-spacing: 0; border-collapse: initial; width: 600px; background: #4D4948;\\\"><tbody><tr><td height=\\\"20\\\">&nbsp;</td></tr><tr><td align=\\\"center\\\"><a href=\\\"{{site_url}}\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\">{{title}}</a></td></tr><tr><td height=\\\"20\\\">&nbsp;</td></tr></tbody></table></td></tr><tr><td><table style=\\\"margin: 0px auto; border-spacing: 0; border-collapse: initial; width: 600px; background: #fff; padding: 20px 20px 0;\\\"><tbody><tr><td style=\\\"color: #202020; font-size: 16px; line-height: 150%; text-align: left; padding: 13px 0;\\\">Dear <strong>{{lead_name}}</strong>,</td></tr></tbody></table></td></tr><tr><td style=\\\"color: #202020; font-size: 16px; line-height: 150%; text-align: left; padding: 13px 20px;\\\">Invite link to your request to proceed <strong>{{link}}</strong></td></tr></tbody></table></td></tr></tbody></table>\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/emailtemplate",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"emailtemplate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Email Template",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "default"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\":\"63f0e8312a1b1e6d616940bd\",\r\n    \"name\":\"LeadInvite\",\r\n    \"sender\":\"invite@gmail.com\",\r\n    \"sender_name\":\"Dzitra\",\r\n    \"subject\":\"{{title}} Invite Mail\",\r\n    \"content\":\"<p>&nbsp;</p><table style=\\\"margin: 0 auto; padding: 0; color: #000; background: #FAFAFA; padding-top: 40px; padding-bottom: 40px; font-family: Helvetica;\\\" border=\\\"0\\\" width=\\\"600px\\\" cellspacing=\\\"0\\\" cellpadding=\\\"0\\\"><tbody><tr><td><table class=\\\"full-widths;\\\" style=\\\"margin: 0px auto; border-spacing: 0; border-collapse: initial; width: 600px; background: #fff;\\\"><tbody><tr><td><table class=\\\"full-widths;\\\" style=\\\"margin: 0px auto; border-spacing: 0; border-collapse: initial; width: 600px; background: #4D4948;\\\"><tbody><tr><td height=\\\"20\\\">&nbsp;</td></tr><tr><td align=\\\"center\\\"><a href=\\\"{{site_url}}\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\">{{title}}</a></td></tr><tr><td height=\\\"20\\\">&nbsp;</td></tr></tbody></table></td></tr><tr><td><table style=\\\"margin: 0px auto; border-spacing: 0; border-collapse: initial; width: 600px; background: #fff; padding: 20px 20px 0;\\\"><tbody><tr><td style=\\\"color: #202020; font-size: 16px; line-height: 150%; text-align: left; padding: 13px 0;\\\">Dear <strong>{{lead_name}}</strong>,</td></tr></tbody></table></td></tr><tr><td style=\\\"color: #202020; font-size: 16px; line-height: 150%; text-align: left; padding: 13px 20px;\\\">Invite link to your request to proceed: <strong><a href=\\\"{{site_url}}{{link}}\\\">click here</a></strong></td></tr></tbody></table></td></tr></tbody></table>\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/emailtemplate",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"emailtemplate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Email Template",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/emailtemplate/63f0e8312a1b1e6d616940bd",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"emailtemplate",
+								"63f0e8312a1b1e6d616940bd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Email Template List - Active & Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/emailtemplate/list/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"emailtemplate",
+								"list",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Email Template List - All Status",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/emailtemplate/all/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"emailtemplate",
+								"all",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Email Template List - Active",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/emailtemplate/active/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"emailtemplate",
+								"active",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Email Template List - Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/emailtemplate/inactive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"emailtemplate",
+								"inactive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Email Template List - Archive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/emailtemplate/archive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"emailtemplate",
+								"archive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Email Template List - Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/emailtemplate/delete/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"emailtemplate",
+								"delete",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dzitra User",
+			"item": [
+				{
+					"name": "Sign in",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"superadmin@mail.in\",\r\n    \"password\":\"admin@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/dzitrauser/signin",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"dzitrauser",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Dzitra User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"c3\",\r\n    \"display_name\": \"CP3\",\r\n    \"email\": \"cp3@mail.in\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/dzitrauser",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"dzitrauser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Dzitra User",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"63f429333216364e418e85a6\",\r\n    \"name\": \"c5\",\r\n    \"display_name\": \"CP5\",\r\n    \"email\": \"cp5@mail.in\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/dzitrauser",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"dzitrauser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Dzitra User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/dzitrauser/63f429333216364e418e85a6",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"dzitrauser",
+								"63f429333216364e418e85a6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dzitra User List - Active & Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/dzitrauser/list/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"dzitrauser",
+								"list",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dzitra User List - All Status",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/dzitrauser/all/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"dzitrauser",
+								"all",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dzitra User List - Active",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/dzitrauser/active/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"dzitrauser",
+								"active",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dzitra User List - Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/dzitrauser/inactive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"dzitrauser",
+								"inactive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dzitra User List - Archive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/dzitrauser/archive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"dzitrauser",
+								"archive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dzitra User List - Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/dzitrauser/delete/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"dzitrauser",
+								"delete",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Region",
+			"item": [
+				{
+					"name": "Save Region",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\":\"region1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/region",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"region"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Region",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"63f432ad11859e9b67387de7\",\r\n    \"name\": \"region1 u\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/region",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"region"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Region",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/region/63f432ad11859e9b67387de7",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"region",
+								"63f432ad11859e9b67387de7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Region List - Active & Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/region/list/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"region",
+								"list",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Region List - All Status",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/region/all/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"region",
+								"all",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Region List - Active",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/region/active/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"region",
+								"active",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Region List - Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/region/inactive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"region",
+								"inactive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Region List - Archive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/region/archive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"region",
+								"archive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Region List - Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/region/delete/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"region",
+								"delete",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Active Regions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/region/all/active",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"region",
+								"all",
+								"active"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lead Type",
+			"item": [
+				{
+					"name": "Save Lead Type",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\":\"ltype1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/leadtype",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadtype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Lead Type",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"63f43537ce347343ddf7662a\",\r\n    \"name\": \"ltype1 u\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/leadtype",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadtype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Lead Type",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadtype/63f43537ce347343ddf7662a",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadtype",
+								"63f43537ce347343ddf7662a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Type List - Active & Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadtype/list/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadtype",
+								"list",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Type List - All Status",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadtype/all/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadtype",
+								"all",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Type List - Active",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadtype/active/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadtype",
+								"active",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Type List - Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadtype/inactive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadtype",
+								"inactive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Type List - Archive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadtype/archive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadtype",
+								"archive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Type List - Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadtype/delete/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadtype",
+								"delete",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Active Lead Types",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadtype/all/active",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadtype",
+								"all",
+								"active"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lead Status",
+			"item": [
+				{
+					"name": "Save Lead Status",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\":\"lstatus1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/leadstatus",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadstatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Lead Status",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"63f4369dce347343ddf7662b\",\r\n    \"name\": \"lstatus1 u\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/leadstatus",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadstatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Lead Status",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadstatus/63f4369dce347343ddf7662b",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadstatus",
+								"63f4369dce347343ddf7662b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Status List - Active & Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadstatus/list/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadstatus",
+								"list",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Status List - All Status",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadstatus/all/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadstatus",
+								"all",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Status List - Active",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadstatus/active/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadstatus",
+								"active",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Status List - Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadstatus/inactive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadstatus",
+								"inactive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Status List - Archive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadstatus/archive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadstatus",
+								"archive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lead Status List - Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadstatus/delete/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadstatus",
+								"delete",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Active Lead Status",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/leadstatus/all/active",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"leadstatus",
+								"all",
+								"active"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Plan Type",
+			"item": [
+				{
+					"name": "Get All Active Plan Types",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/plantype/all/active",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"plantype",
+								"all",
+								"active"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Plan",
+			"item": [
+				{
+					"name": "Create Plan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"planname\":\"p1\",\r\n    \"usercount\":5,\r\n    \"dayscount\":10,\r\n    \"remainder1\": 3,\r\n    \"remainder2\":1,\r\n    \"plantypeid\":\"63f441f5f1a2b0230718671d\",\r\n    \"price\":20,\r\n    \"internal_name\":\"plan 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/plan",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"plan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Plan",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"63f44c9d7088e7e74775fe7f\",\r\n    \"planname\":\"Plan 1\",\r\n    \"usercount\":5,\r\n    \"dayscount\":10,\r\n    \"remainder1\": 3,\r\n    \"remainder2\":1,\r\n    \"plantypeid\":\"63f441f5f1a2b0230718671d\",\r\n    \"price\":20,\r\n    \"internal_name\":\"plan 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/plan",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"plan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Plan",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/plan/63f44c9d7088e7e74775fe7f",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"plan",
+								"63f44c9d7088e7e74775fe7f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Plan List - Active & Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/plan/list/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"plan",
+								"list",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Plan List - All Status",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/plan/all/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"plan",
+								"all",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Plan List - Active",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/plan/active/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"plan",
+								"active",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Plan List - Inactive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/plan/inactive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"plan",
+								"inactive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Plan List - Archive",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/plan/archive/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"plan",
+								"archive",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Plan List - Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/plan/delete/createdAt/-1/1/10",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"plan",
+								"delete",
+								"createdAt",
+								"-1",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Active Plans",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "userid",
+								"value": "{{user}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/plan/all/active",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"plan",
+								"all",
+								"active"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,63 @@
+<div class="row">
+    <div class="dialogue-head col-md-8">
+        <h5 mat-dialog-title *ngIf="!isEditMode">Add Plan</h5> 
+        <h5 mat-dialog-title *ngIf="isEditMode">Plan Info</h5> 
+    </div>
+    <div class="close-Btns col-md-4">
+        <div class="card close-Card" [mat-dialog-close]>
+            <img src="../../../../../assets/image/fi_x.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="addform-container">
+    <form [formGroup]="addplanForm" (ngSubmit)="onSubmit(addplanForm)">
+        <div class="row">
+            <div class="col-md-6">
+                <label class="dialogue-label" for="planname">Plan Name</label>
+                <input type="text" formControlName="planname" name="planname" class="w-100 input-Class">
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="usercount">User Count</label>
+                <input type="text" formControlName="usercount" name="usercount" class="w-100 input-Class">
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="dayscount">Days Count</label>
+                <input type="text" formControlName="dayscount" name="dayscount" class="w-100 input-Class">
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="remainder1">Reminder 1</label>
+                <input type="text" formControlName="remainder1" name="remainder1" class="w-100 input-Class">
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="remainder2">Reminder 2</label>
+                <input type="text" formControlName="remainder2" name="remainder2" class="w-100 input-Class">
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="plantypeid">Plan Type</label>
+                <select formControlName="plantypeid" name="plantypeid" class="w-100 input-Class">
+                    <option *ngFor="let item of PlanTypes" [value]="item._id">{{item.name}}</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="price">Price</label>
+                <!-- <input type="text"   class="w-100 input-Class"> -->
+                <input type="text" formControlName="price" name="price" class="form-control" name="sumInsuredLimit" id="field_sumInsuredLimit" 
+                  [(ngModel)]="sumInsuredLimitModel" currencyMask
+                  [options]="amountPrecisionOptions"
+                  required />
+            </div>
+            <div class="col-md-6">
+                <label class="dialogue-label" for="internal_name">Internal Name</label>
+                <input type="text" formControlName="internal_name" name="internal_name" class="w-100 input-Class">
+            </div>
+        </div>
+        <div class="button col-md-12">
+            <button type="submit" class="createLead-Btns" *ngIf="!isEditMode && !readOnly && !isInfoOnly">Add Plan</button>
+            <button type="submit" class="createLead-Btns" *ngIf="isEditMode && !readOnly && !isInfoOnly">Save</button>
+            <button type="submit" class="createLead-Btns" *ngIf="readOnly" (click)="editinfo()">Edit</button>
+            <button type="submit" class="createLead-Btns" *ngIf="isInfoOnly" [mat-dialog-close]> Close</button>
+
+        </div>
+    </form>
+</div>
+ 
